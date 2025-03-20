@@ -1,27 +1,63 @@
 Dati:
 
+Formato dati
+
+
 Utente{
+
 	$idUtente
+
 	$Nome
-	$email || telefono
 
-	$list_idChats 
-	$list_idfriends
-}
-
-Amministratore extend Utente{
+	$email || $telefono
 
 }
 
-#Chat é collegata agli utenti
+
+
+Amministratore extend Utente{}
+
+
+
 Chat {
+
 	$idChat
-	$list_IdUtenti
+
 }
+
+
 
 Gruppo extends Chat{
+
 	$nomeGruppo
+
 	#potrei limitare chat a 2 e qui togliere il limite
+
 	$descrizione
+
 	$list_idAmministratori
+
 }
+
+
+
+Relazioni Ponte:
+
+partecipanti_chat{
+
+       $id_utente
+
+       $id_chat
+
+}
+
+amicizie{
+
+      $id_utente1
+
+       $id_utente2
+
+       $status_amicizia
+
+}
+
