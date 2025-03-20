@@ -1,0 +1,24 @@
+Dati:
+
+Utente{
+	$idUtente
+	$Nome
+	$email || telefono
+}
+
+Amministratore extend Utente{
+
+}
+
+#Chat é collegata agli utenti
+Chat {
+	$idChat
+	$list_IdUtenti
+}
+
+Gruppo extends Chat{
+	$nomeGruppo
+	#potrei limitare chat a 2 e qui togliere il limite
+	$descrizione
+	$list_idAmministratori
+}
