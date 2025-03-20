@@ -4,6 +4,9 @@ Utente{
 	$idUtente
 	$Nome
 	$email || telefono
+
+	$list_idChats 
+	$list_idfriends
 }
 
 Amministratore extend Utente{
