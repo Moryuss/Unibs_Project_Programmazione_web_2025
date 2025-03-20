@@ -1,0 +1,36 @@
+Sito web: 
+
+- IDEA GENERALE: chat, come Telegram, WhatsApp, AOL
+-- CHAT: Utente può scrivere ad altro utente
+-- GRUPPO: 2+ Utenti, il creatore é automaticamente Amministratore
+--- ogni utente può essere nominato Amministratore da un Altro Amministratore
+
+##
+
+- UTENTI:
+#
+-- Base: 
+--- Può scrivere a un altro utente
+--- Può far parte di un gruppo
+#
+-- Amministratore extend Base:
+--- Gestore di un gruppo
+---- Può imporre "regole" / scrivere descrizione dei gruppi
+---- Accettare/rifiutare persone che chiedono di entrare in un gruppo (se non libero)
+---- Bannare/silenziare Utenti.Base
+---- Controllare lista di messaggi "non in linea alle regole"
+
+##
+
+- Caratteristiche chat:
+#
+-- Poter mandare:
+--- testo
+--- emoji
+--- immagini
+#
+-- Caratteristiche specifiche chat
+--- Poter modificare size, font, colour (AOL style)
+
+##
+
